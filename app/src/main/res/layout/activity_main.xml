@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgdstyle"
+    tools:context="com.example.bhadur.loginapp.MainActivity">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="49dp"
+        android:fontFamily="monospace"
+        android:text="Account Login"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView2"
+        android:layout_marginTop="27dp"
+        android:background="@drawable/bannerstyle"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="300dp"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent">
+
+
+
+
+        <EditText
+            android:id="@+id/etEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="22dp"
+            android:layout_toEndOf="@+id/linearLayout"
+            android:drawableLeft="@android:drawable/ic_dialog_email"
+            android:drawableTint="@color/colorAccent"
+            android:ems="10"
+            android:hint="Enter Email"
+            android:inputType="textEmailAddress" />
+        </android.support.design.widget.TextInputLayout>
+
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent">
+
+        <EditText
+            android:id="@+id/etPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/etEmail"
+            android:layout_marginTop="26dp"
+            android:layout_toEndOf="@+id/linearLayout"
+            android:drawableLeft="@android:drawable/ic_lock_lock"
+            android:ems="10"
+            android:hint="Enter Password"
+
+            android:inputType="textPassword" />
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:id="@+id/btnCreate"
+            android:layout_width="200dp"
+            android:layout_height="25dp"
+            android:layout_alignEnd="@+id/etPassword"
+            android:layout_below="@+id/etPassword"
+            android:layout_marginEnd="54dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/buttonstyle"
+            android:elevation="5dp"
+            android:text="Create New Account" />
+
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="200dp"
+            android:layout_height="25dp"
+
+
+            android:layout_alignStart="@+id/btnCreate"
+            android:layout_below="@+id/btnCreate"
+            android:layout_marginTop="13dp"
+            android:background="@drawable/buttonstyle"
+            android:elevation="5dp"
+            android:text="Login" />
+
+        <Button
+            android:id="@+id/btnGoogle"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+
+            android:layout_above="@+id/tvForget"
+            android:layout_alignParentStart="true"
+            android:background="@drawable/logo"
+            android:elevation="5dp" />
+
+        <TextView
+            android:id="@+id/tvForget"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="100dp"
+            android:text="Forget Password" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/user_profile_photo"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/textView2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/batman"
+
+
+        />
+</RelativeLayout>
